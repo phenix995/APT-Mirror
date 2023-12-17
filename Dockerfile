@@ -11,7 +11,7 @@ EXPOSE 80:3143
 VOLUME ["/var/spool/apt-mirror"]
 
 # Set up the default mirror configuration
-COPY mirror.list /etc/apt/mirror.list
+#COPY mirror.list /etc/apt/mirror.list
 
 COPY entrypoint.sh /entrypoint.sh
 
