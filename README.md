@@ -1,7 +1,8 @@
 # APT-Mirror
- 
+# dev branch
+
 # To build 
-docker build --tag custom-apt-mirror .
+docker build --tag custom-apt-mirror:dev .
 
 # To run
 
