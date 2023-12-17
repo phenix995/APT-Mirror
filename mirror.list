@@ -1,0 +1,37 @@
+############# config ##################
+#
+set base_path    /var/spool/apt-mirror
+set mirror_path  $base_path/mirror
+set skel_path    $base_path/skel
+set var_path     $base_path/var
+set cleanscript $var_path/clean.sh
+set defaultarch  <your-architecture> # e.g., amd64
+set postmirror_script $var_path/postmirror.sh
+set run_postmirror 0
+#
+############# end config ##############
+
+# Ubuntu 22.04 (Jammy Jellyfish)
+deb http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse
+
+# Ubuntu 23.04 (tentative)
+deb http://archive.ubuntu.com/ubuntu kinetic main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-backports main restricted universe multiverse
+
+# Debian 11 (Bullseye)
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb http://deb.debian.org/debian-security bullseye-security main contrib non-free
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+# Debian 12 (Bookworm)
+deb http://deb.debian.org/debian bookworm main contrib non-free
+deb http://deb.debian.org/debian-security bookworm-security main contrib non-free
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free
+
+clean http://archive.ubuntu.com/ubuntu
+clean http://deb.debian.org/debian
