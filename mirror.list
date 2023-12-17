@@ -11,17 +11,88 @@ set run_postmirror 0
 #
 ############# end config ##############
 
-# Ubuntu 22.04 (Jammy Jellyfish)
-deb http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse
+#Ubuntu 23.10
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic main restricted
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic-updates restricted main
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic universe
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic-updates universe
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic multiverse
+deb http://fi.archive.ubuntu.com/ubuntu/ mantic-updates multiverse
+deb http://security.ubuntu.com/ubuntu mantic-security restricted main
+deb http://security.ubuntu.com/ubuntu mantic-security universe
+deb http://security.ubuntu.com/ubuntu mantic-security multiverse
 
-# Ubuntu 23.04 (tentative)
-deb http://archive.ubuntu.com/ubuntu kinetic main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu kinetic-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu kinetic-updates main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu kinetic-backports main restricted universe multiverse
+# Ubuntu 23.04
+deb http://mirrors.aliyun.com/ubuntu/ lunar main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ lunar main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ lunar-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ lunar-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ lunar-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ lunar-backports main restricted universe multiverse
+
+# Ubuntu 22.04.1
+deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+# deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+
+# Ubuntu 22.04 (Jammy Jellyfish)
+deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+# deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+
+# Ubuntu 21.10
+deb http://old-releases.ubuntu.com/ubuntu/ impish main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ impish main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse
+
+# Ubuntu 21.04
+deb http://old-releases.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse
+
+# Ubuntu 20.04
+deb https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
 # Debian 11 (Bullseye)
 deb http://deb.debian.org/debian bullseye main contrib non-free
