@@ -1,5 +1,9 @@
 FROM ubuntu:latest
 
+# Use Apt-Cacher NG as a proxy
+# Remove this line if you don't want to use a proxy
+#RUN echo 'Acquire::http::Proxy "http://172.17.0.2:3142";' > /etc/apt/apt.conf.d/01proxy
+
 # Create a non-root user
 RUN useradd -m -d /home/aptmirror aptmirror
 
@@ -14,7 +18,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Set the user
-USER aptmirror
+#USER aptmirror
 
 # Set the volume
 VOLUME ["/var/spool/apt-mirror"]
